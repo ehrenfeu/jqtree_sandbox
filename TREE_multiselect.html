@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+  <title>jqTreeTest</title>
+
+  <script src="javascript/jquery.min.js"></script>
+  <script src="javascript/tree.jquery.js"></script>
+  <link rel="stylesheet" href="javascript/jqtree.css"></link>
+
+</head>
+
+
+<body>
+
+<fieldset>
+<legend>funny tree</legend>
+
+<div id="tree1"></div>
+
+<script>
+
+var data = [
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 1739,
+                        "label": "Slide1_14_testAlex - Position 4.ims",
+                        "owner": "demo02"
+                    }
+                ],
+                "id": 78,
+                "label": "siCTL",
+                "owner": "demo02"
+            },
+            {
+                "children": [
+                    {
+                        "id": 1740,
+                        "label": "Slide1_15_testAlex - Position 5.ims",
+                        "owner": "demo02"
+                    }
+                ],
+                "id": 79,
+                "label": "siHP1a",
+                "owner": "demo02"
+            }
+        ],
+        "id": 42,
+        "label": "130107-siRNA-HP1",
+        "owner": "demo02"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 1741,
+                        "label": "HeLa_DAPI_Actin_aTubulin.lsm",
+                        "owner": "demo02"
+                    },
+                    {
+                        "id": 1742,
+                        "label": "HeLa_DAPI_Actin_aTubulin_Subset3-7_Maximumintensityprojection_omero.tif",
+                        "owner": "demo02"
+                    }
+                ],
+                "id": 80,
+                "label": "Blockkurs",
+                "owner": "demo02"
+            }
+        ],
+        "id": 43,
+        "label": "130105-HeLa/fixed",
+        "owner": "demo02"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 1744,
+                        "label": "120814-Rotifer-stainingON-nonsaturated-tiles_stex1-q92.ims [120814-Rotifer-stainingON-nonsaturated-tiles_stex1-q92.ims Resolution Level 1]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1745,
+                        "label": "120814-Rotifer-stainingON-nonsaturated-tiles_stex1-q92.ims [120814-Rotifer-stainingON-nonsaturated-tiles_stex1-q92.ims Resolution Level 2]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1746,
+                        "label": "120814-Rotifer-stainingON-nonsaturated-tiles_stex1-q92.ims [120814-Rotifer-stainingON-nonsaturated-tiles_stex1-q92.ims Resolution Level 3]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1747,
+                        "label": "120814-Rotifer-stainingON-nonsaturated-tiles_stex1-q92.ims [120814-Rotifer-stainingON-nonsaturated-tiles_stex1-q92.ims Resolution Level 4]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1756,
+                        "label": "120814-Rotifer-stainingON-nonsaturated-tiles_stex1-q92.ims [120814-Rotifer-stainingON-nonsaturated-tiles_stex1-q92_proj_ZRange_1_132.ims Resolution Level 1]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1743,
+                        "label": "120816-Rotifer_10X_PMT1_NoSat.lsm",
+                        "owner": "demo01"
+                    }
+                ],
+                "id": 81,
+                "label": "Rotifers",
+                "owner": "demo01"
+            },
+            {
+                "children": [
+                    {
+                        "id": 1751,
+                        "label": "120815-Tardigrade3-staining2h_stex2-75-sim64.ims [120815-Tardigrade3-staining2h_stex2-75-sim64.ims Resolution Level 1]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1752,
+                        "label": "120815-Tardigrade3-staining2h_stex2-75-sim64.ims [120815-Tardigrade3-staining2h_stex2-75-sim64.ims Resolution Level 2]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1753,
+                        "label": "120815-Tardigrade3-staining2h_stex2-75-sim64.ims [120815-Tardigrade3-staining2h_stex2-75-sim64.ims Resolution Level 3]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1754,
+                        "label": "120815-Tardigrade3-staining2h_stex2-75-sim64.ims [120815-Tardigrade3-staining2h_stex2-75-sim64.ims Resolution Level 4]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1758,
+                        "label": "120815-Tardigrade3-staining2h_stex2-75-sim64.ims [120815-Tardigrade3-staining2h_stex2-75-sim64_proj_ZRange_1_128.ims Resolution Level 1]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1748,
+                        "label": "120815-Tardigrade-staining2h_gamma-035_stpa1_75_sim26.ims [120815-Tardigrade-staining2h_gamma-035_stpa1_75_sim26.ims Resolution Level 1]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1749,
+                        "label": "120815-Tardigrade-staining2h_gamma-035_stpa1_75_sim26.ims [120815-Tardigrade-staining2h_gamma-035_stpa1_75_sim26.ims Resolution Level 2]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1750,
+                        "label": "120815-Tardigrade-staining2h_gamma-035_stpa1_75_sim26.ims [120815-Tardigrade-staining2h_gamma-035_stpa1_75_sim26.ims Resolution Level 3]",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1757,
+                        "label": "120815-Tardigrade-staining2h_gamma-035_stpa1_75_sim26.ims [120815-Tardigrade-staining2h_gamma-035_stpa1_75_sim26_proj_ZRange_1_129.ims Resolution Level 1]",
+                        "owner": "demo01"
+                    }
+                ],
+                "id": 82,
+                "label": "Tardigrades",
+                "owner": "demo01"
+            }
+        ],
+        "id": 39,
+        "label": "121005-BoGa",
+        "owner": "demo01"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 8749,
+                        "label": "atub405_ACAfitc_Pericentrin568_1518_SI_004_SIR_ALX.dv",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 1755,
+                        "label": "Rotifer-20X-zstack.lsm",
+                        "owner": "demo01"
+                    }
+                ],
+                "id": 83,
+                "label": "Rotifers",
+                "owner": "demo01"
+            }
+        ],
+        "id": 40,
+        "label": "121001-BoGa",
+        "owner": "demo01"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 1782,
+                        "label": "TiltCorrectedMOnday.lsm",
+                        "owner": "demo03"
+                    }
+                ],
+                "id": 90,
+                "label": "CorrectedTilt",
+                "owner": "demo03"
+            },
+            {
+                "children": [
+                    {
+                        "id": 1760,
+                        "label": "Tilt2.lsm",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1759,
+                        "label": "Tilt.lsm",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1762,
+                        "label": "TiltOriginal.lsm",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1763,
+                        "label": "TiltUp.lsm",
+                        "owner": "demo03"
+                    }
+                ],
+                "id": 84,
+                "label": "Tilt",
+                "owner": "demo03"
+            },
+            {
+                "children": [
+                    {
+                        "id": 1764,
+                        "label": "zstack.lsm",
+                        "owner": "demo03"
+                    }
+                ],
+                "id": 85,
+                "label": "Zoomed",
+                "owner": "demo03"
+            }
+        ],
+        "id": 44,
+        "label": "121210-MouseKidneySample",
+        "owner": "demo03"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 1765,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos001_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1766,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos002_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1767,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos003_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 5351,
+                        "label": "DV_mitosis_07_R3D.dv",
+                        "owner": "demo03"
+                    }
+                ],
+                "id": 86,
+                "label": "Control",
+                "owner": "demo03"
+            }
+        ],
+        "id": 45,
+        "label": "110326-MouseKidney",
+        "owner": "demo03"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 1772,
+                        "label": "Experiment.lif [Image015]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1773,
+                        "label": "Experiment.lif [Image017]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1774,
+                        "label": "Experiment.lif [Image019]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1775,
+                        "label": "Experiment.lif [Image022]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1768,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos001_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1769,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos002_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1770,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos003_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1771,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos004_S001]",
+                        "owner": "demo03"
+                    }
+                ],
+                "id": 87,
+                "label": "Control",
+                "owner": "demo03"
+            }
+        ],
+        "id": 46,
+        "label": "120213-MouseKidney",
+        "owner": "demo03"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 1777,
+                        "label": "Experiment_001.lif [Image014]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1776,
+                        "label": "Experiment_001.lif [Image015]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1778,
+                        "label": "Experiment_001.lif [Pos001_S002]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1779,
+                        "label": "Experiment_001.lif [Pos001_S003]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1780,
+                        "label": "Experiment_001.lif [Pos002_S003]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 1781,
+                        "label": "Experiment_001.lif [Pos003_S003]",
+                        "owner": "demo03"
+                    }
+                ],
+                "id": 88,
+                "label": "Control",
+                "owner": "demo03"
+            }
+        ],
+        "id": 47,
+        "label": "111114-MouseKidney",
+        "owner": "demo03"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 23310,
+                        "label": "Experiment.lif [Image015]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23311,
+                        "label": "Experiment.lif [Image017]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23312,
+                        "label": "Experiment.lif [Image019]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23313,
+                        "label": "Experiment.lif [Image022]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23306,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos001_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23307,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos002_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23308,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos003_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23309,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos004_S001]",
+                        "owner": "loynton"
+                    }
+                ],
+                "id": 650,
+                "label": "Control",
+                "owner": "loynton"
+            },
+            {
+                "children": [
+                    {
+                        "id": 1716,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_002_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1717,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_003_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1718,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_004_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1719,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_004_SIR_ALX_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1720,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_006_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1721,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_006_SIR_ALX_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1722,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_008_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1723,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_008_SIR_ALX_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1725,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_005_D3D.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1726,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_005_D3D_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1724,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_005.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1728,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_007_D3D.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 16866,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_007_D3D_proj_ZRange_1_62.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1729,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_007_D3D_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1727,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_007.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1730,
+                        "label": "PericentrinTxR_aTub405_ACAfitc_1514_SI_009_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1731,
+                        "label": "PericentrinTxR_aTub405_ACAfitc_1514_SI_009_SIR_ALX_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1732,
+                        "label": "PericentrinTxR_aTub405_ACAfitc_1514_SI_010_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1733,
+                        "label": "PericentrinTxR_aTub405_ACAfitc_1514_SI_010_SIR_ALX_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1734,
+                        "label": "PericentrinTxR_aTub405_ACAfitc_1514_SI_011_SIR_ALX.dv",
+                        "owner": "loynton"
+                    }
+                ],
+                "id": 73,
+                "label": "DMC 54",
+                "owner": "loynton"
+            },
+            {
+                "children": [
+                    {
+                        "id": 23297,
+                        "label": "atub405_ACAfitc_Pericentrin568_1518_SI_004_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23302,
+                        "label": "Experiment.lif [Image015]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23303,
+                        "label": "Experiment.lif [Image017]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23304,
+                        "label": "Experiment.lif [Image019]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23305,
+                        "label": "Experiment.lif [Image022]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23298,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos001_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23299,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos002_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23300,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos003_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23301,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos004_S001]",
+                        "owner": "loynton"
+                    }
+                ],
+                "id": 94,
+                "label": "KiAA MVA",
+                "owner": "loynton"
+            },
+            {
+                "children": [
+                    {
+                        "id": 23181,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos001_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23182,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos002_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23183,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos003_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1786,
+                        "label": "DV_mitosis_07_R3D.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1787,
+                        "label": "DV_mitosis_07_R3D.ims [DV_mitosis_07_R3D.ims Resolution Level 1]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1788,
+                        "label": "DV_mitosis_07_R3D.ims [DV_mitosis_07_R3D.ims Resolution Level 2]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1789,
+                        "label": "DV_mitosis_08_R3D.dv",
+                        "owner": "loynton"
+                    }
+                ],
+                "id": 93,
+                "label": "PHD 44",
+                "owner": "loynton"
+            }
+        ],
+        "id": 35,
+        "label": "Candidates 160213",
+        "owner": "loynton"
+    },
+    {
+        "children": [
+            {
+                "children": [],
+                "id": 76,
+                "label": "2011",
+                "owner": "loynton"
+            },
+            {
+                "children": [],
+                "id": 75,
+                "label": "2012",
+                "owner": "loynton"
+            }
+        ],
+        "id": 34,
+        "label": "Candidates 030113",
+        "owner": "loynton"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 1934,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos001_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1935,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos002_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1936,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos003_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1937,
+                        "label": "atub405_ACAfitc_Pericentrin568_1518_SI_004_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1938,
+                        "label": "atub405_ACAfitc_Pericentrin568_1520_SI_005_SIR_ALX.ims [atub405_ACAfitc_Pericentrin568_1520_SI_005_SIR_ALX.ims Resolution Level 1]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1939,
+                        "label": "atub405_ACAfitc_Pericentrin568_1520_SI_005_SIR_ALX.ims [atub405_ACAfitc_Pericentrin568_1520_SI_005_SIR_ALX.ims Resolution Level 2]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1940,
+                        "label": "DAPI_coilin_hp1a_1514_SI_001_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1946,
+                        "label": "Experiment.lif [Image017]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1947,
+                        "label": "Experiment.lif [Image019]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1948,
+                        "label": "Experiment.lif [Image022]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1941,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos001_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1942,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos002_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1943,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos003_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1944,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos004_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1949,
+                        "label": "HeLa_DAPI_Actin_aTubulin.lsm",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1952,
+                        "label": "zstack.lsm",
+                        "owner": "loynton"
+                    }
+                ],
+                "id": 117,
+                "label": "2013-01-23",
+                "owner": "loynton"
+            },
+            {
+                "children": [
+                    {
+                        "id": 23181,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos001_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23182,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos002_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23183,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos003_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1786,
+                        "label": "DV_mitosis_07_R3D.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1787,
+                        "label": "DV_mitosis_07_R3D.ims [DV_mitosis_07_R3D.ims Resolution Level 1]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1788,
+                        "label": "DV_mitosis_07_R3D.ims [DV_mitosis_07_R3D.ims Resolution Level 2]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1789,
+                        "label": "DV_mitosis_08_R3D.dv",
+                        "owner": "loynton"
+                    }
+                ],
+                "id": 93,
+                "label": "PHD 44",
+                "owner": "loynton"
+            }
+        ],
+        "id": 36,
+        "label": "Candidate 040812",
+        "owner": "loynton"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 1716,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_002_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1717,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_003_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1718,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_004_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1719,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_004_SIR_ALX_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1720,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_006_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1721,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_006_SIR_ALX_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1722,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_008_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1723,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_SI_008_SIR_ALX_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1725,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_005_D3D.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1726,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_005_D3D_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1724,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_005.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1728,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_007_D3D.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 16866,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_007_D3D_proj_ZRange_1_62.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1729,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_007_D3D_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1727,
+                        "label": "PericentrinFITC_aTub568_ACAcy5_1514_WF_007.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1730,
+                        "label": "PericentrinTxR_aTub405_ACAfitc_1514_SI_009_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1731,
+                        "label": "PericentrinTxR_aTub405_ACAfitc_1514_SI_009_SIR_ALX_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1732,
+                        "label": "PericentrinTxR_aTub405_ACAfitc_1514_SI_010_SIR_ALX.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1733,
+                        "label": "PericentrinTxR_aTub405_ACAfitc_1514_SI_010_SIR_ALX_VOL.dv",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 1734,
+                        "label": "PericentrinTxR_aTub405_ACAfitc_1514_SI_011_SIR_ALX.dv",
+                        "owner": "loynton"
+                    }
+                ],
+                "id": 73,
+                "label": "DMC 54",
+                "owner": "loynton"
+            }
+        ],
+        "id": 37,
+        "label": "Candidate 091112",
+        "owner": "loynton"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 23310,
+                        "label": "Experiment.lif [Image015]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23311,
+                        "label": "Experiment.lif [Image017]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23312,
+                        "label": "Experiment.lif [Image019]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23313,
+                        "label": "Experiment.lif [Image022]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23306,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos001_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23307,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos002_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23308,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos003_S001]",
+                        "owner": "loynton"
+                    },
+                    {
+                        "id": 23309,
+                        "label": "Experiment.lif [Mark_and_Find_002/Pos004_S001]",
+                        "owner": "loynton"
+                    }
+                ],
+                "id": 650,
+                "label": "Control",
+                "owner": "loynton"
+            }
+        ],
+        "id": 33,
+        "label": "Candidates 050912",
+        "owner": "loynton"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 27347,
+                        "label": "130730-Experiment.lif [Sequential-Frame]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27349,
+                        "label": "130730-Experiment.lif [SequentialFrame2]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27346,
+                        "label": "130730-Experiment.lif [Sequential-Line]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27351,
+                        "label": "130730-Experiment.lif [SequentialLine2]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27348,
+                        "label": "130730-Experiment.lif [Simultaneous]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27350,
+                        "label": "130730-Experiment.lif [Simultaneous2]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27361,
+                        "label": "130801Experiment.lif [LiveJH001-5laserGain188]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27360,
+                        "label": "130801Experiment.lif [LiveJH001-7laserGain100]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27362,
+                        "label": "130801Experiment.lif [LiveJH002-7laserGain100]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27353,
+                        "label": "130801Experiment.lif [LiveJH002-morning]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27352,
+                        "label": "130801Experiment.lif [LiveJH005-morning]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27354,
+                        "label": "130801Experiment.lif [Mark_and_Find_JH002/Pos001_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27355,
+                        "label": "130801Experiment.lif [Mark_and_Find_JH002/Pos002_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27356,
+                        "label": "130801Experiment.lif [Mark_and_Find_JH002/Pos003_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27357,
+                        "label": "130801Experiment.lif [Mark_and_Find_JH002/Pos004_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27358,
+                        "label": "130801Experiment.lif [Series028]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27359,
+                        "label": "130801Experiment.lif [SlideJH001-DAPI]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27363,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos001_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27364,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos002_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 27365,
+                        "label": "20120326-Experiment.lif [Mark_and_Find_001/Pos003_S001]",
+                        "owner": "demo03"
+                    },
+                    {
+                        "id": 50999,
+                        "label": "Dictylostelium_short_5_R3D.ims",
+                        "owner": "demo03"
+                    }
+                ],
+                "id": 949,
+                "label": "My Dataset",
+                "owner": "demo03"
+            }
+        ],
+        "id": 468,
+        "label": "My Project",
+        "owner": "demo03"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 51023,
+                        "label": "130312-DAPI_Phallo_aTub01_Maximumintensityprojection.lsm",
+                        "owner": "demo03"
+                    }
+                ],
+                "id": 1748,
+                "label": "singleplane",
+                "owner": "demo03"
+            }
+        ],
+        "id": 950,
+        "label": "140129-Intro",
+        "owner": "demo03"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "id": 74300,
+                        "label": "actin example .zvi",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 74650,
+                        "label": "BSC1_example",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 74298,
+                        "label": "BSC1 example.zvi",
+                        "owner": "demo01"
+                    },
+                    {
+                        "id": 74299,
+                        "label": "PTP3 example .zvi",
+                        "owner": "demo01"
+                    }
+                ],
+                "id": 2108,
+                "label": "WF_ZVI_Spang-Lab",
+                "owner": "demo01"
+            }
+        ],
+        "id": 1154,
+        "label": "HRM_TESTDATA",
+        "owner": "demo01"
+    }
+]
+;
+
+$(function() {
+    $('#tree1').tree({
+        saveState: true,
+        data: data
+    });
+    var $tree = $('#tree1');
+    $tree.bind(
+        'tree.click',
+        function(e) {
+            // Disable single selection
+            e.preventDefault();
+
+            var selected_node = e.node;
+
+            if (selected_node.id == undefined) {
+                console.log('The multiple selection functions require that nodes have an id');
+            }
+
+            if ($tree.tree('isNodeSelected', selected_node)) {
+                $tree.tree('removeFromSelection', selected_node);
+            }
+            else {
+                $tree.tree('addToSelection', selected_node);
+            }
+        }
+    );
+});
+
+    </script>
+
+</fieldset>
+
+
+</body>
+</html>
